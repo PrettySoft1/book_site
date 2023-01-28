@@ -565,6 +565,7 @@ input:focus::placeholder {
 @media (max-width: 450px) {
     .services .content p {
         width: 100%;
+        padding: 10px 0px;
     }
     .sign_up .info {
         width: 100%;
