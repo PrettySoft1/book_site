@@ -563,6 +563,9 @@ input:focus::placeholder {
     }
 }
 @media (max-width: 450px) {
+    .services .content p {
+        width: 100%;
+    }
     .sign_up .info {
         width: 100%;
     }
