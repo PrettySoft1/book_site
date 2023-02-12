@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title id="site_title">صدى الكتب</title>
-
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/add_book.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/books.css">
+    <title>صدى الكتب</title>
 </head>
 
 <body dir="rtl">
@@ -101,91 +100,51 @@
                     <li><a href="index.html#about">من نحن</a></li>
                     <li><a href="index.html#contact">تواصل معنا</a></li>
                     <li><a href="create_account.html">تسجيل الدخول</a></li>
-                    <li><a href="Add_Books.html">إضافة كتاب</a></li>
                 </ul>
         </div>
         </nav>
     </header>
-    <form action="#" class="search">
-        <input type="text" name="find" id="find" placeholder="ابحث...">
-        <i class="fas fa-search"></i>
+    <div class="main_title">
+        <h2>إضافة كتاب</h2>
+    </div>
+    <form action="#">
+        <div class="content add">
+            <div class="info">
+                <label for="BookName" class="lb_style">اسم الكتاب</label>
+                <br>
+                <input type="text" name="BookName" id="BookName" class="style">
+                <br>
+                <label for="AuthorName" class="lb_style">اسم المؤلف</label>
+                <br>
+                <input type="text" name="AuthorName" id="AuthorName" class="style">
+                <br>
+                <label for="PageCount" class="lb_style">عدد الصفحات</label>
+                <br>
+                <input type="number" name="PageCount" id="PageCount" min="20" class="style">
+                <br>
+                <label for="Dept" class="lb_style">القسم</label>
+                <br>
+                <select name="Dept" id="Dept">
+                    <option disabled selected>اختر القسم</option>
+                    <option value="islamic">الإسلاميات</option>
+                    <option value="adab">كتب الأدب</option>
+                    <option value="health">طب وصحة</option>
+                    <option value="math">رياضيات</option>
+                    <option value="it">تقنية معلومات</option>
+                    <option value="general_knowledeg">ثقافة عامة</option>
+                    <option value="rights">حقوق</option>
+                    <option value="arts">فنون</option>
+                    <option value="sports">رياضة</option>
+                    <option value="mix">منوعات</option>
+                </select>
+                <br>
+            </div>
+            <div class="photo">
+                <div class="show"><img src="#" alt=""></div>
+                <input type="button" name="upload_photo" id="upload_photo" value="رفع صورة">
+            </div>
+        </div>
     </form>
-    <main>
-        <section class="main-section">
-            <div class="content">
-                <h2>وخير جليسٍ في الزمان كتابُ</h2>
-                <p>اقرأ، فالقراءة مفتاح العقول</p>
-            </div>
-        </section>
-        <section class="services">
-            <div class="special-head">
-                <h2>الخدمات</h2>
-            </div>
-            <div class="content">
-                <div class="box">
-                    <i class="fa-solid fa-list-check fa-3x"></i>
-                    <h3>سهولة الوصول</h3>
-                    <p>تتميز المكتبة بسهولة الوصول إلى الكتب حيث قسمت إلى فصول خاصة</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-medal fa-3x"></i>
-                    <h3>جودة في الكتب</h3>
-                    <p>تتميز المكتبة بسهولة الوصول إلى الكتب حيث قسمت إلى فصول خاصة</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-book-open-reader fa-3x"></i>
-                    <h3>متعة للقارئ</h3>
-                    <p>تتميز المكتبة بسهولة الوصول إلى الكتب حيث قسمت إلى فصول خاصة</p>
-                </div>
-            </div>
-        </section>
-        <section class="about" id="about">
-            <div class="content">
-                <div class="special-head">
-                    <h2>من نحن</h2>
-                </div>
-                <div class="info">
-                    <p>
-                        مكتبة متخصصة في كل المجالات
-                        حيث تقدم خدمات متميزة من حيث جودة الكتب
-                        وانتقائها من بين ملايين الكتب.
-                    </p>
-                </div>
-                <div class="button">
-                    <a href="#">مزيد من التفاصيل</a>
-                </div>
-            </div>
-        </section>
-        <section class="contact" id="contact">
-            <div class="content">
-                <div class="special-head">
-                    <h2>تواصل معنا</h2>
-                </div>
-                <div class="info">
-                    <p>
-                        يمكنكم التواصل معنا عبر وسائل التواصل
-                        الإجتماعي، أو عن طريق البريد الإلكتروني
-                    </p>
-                </div>
-                <div class="social">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-snapchat"></i></a>
-                </div>
-                <div class="email">
-                    <form action="#">
-                        <input type="email" placeholder="بريدك الإلكتروني...">
-                        <input type="submit" value="الإشتراك">
-                    </form>
-                </div>
-            </div>
-        </section>
-        <section class="footer">
-            <p>جميع الحقوق محفوظة لصالح منشئ المنصة &copy;</p>
-        </section>
-    </main>
 </body>
 
 </html>

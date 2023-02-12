@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/account.css">
+    <title>Document</title>
+</head>
+
+<body dir="rtl">
+    <header>
+        <div class="content">
+            <div class="logo">
+                <a href="#">
+                    <i class="fa-solid fa-book-open fa-2x"></i>
+                    <h1 id="logo">صدى الكتب</h1>
+                </a>
+            </div>
+            <nav>
+                <input type="checkbox">
+                <ul>
+                    <li><a href="index.html">الصفحة الرئيسية </a></li>
+                    <li>
+                        <a class="book_larg">أقسام الكتب</a>
+                        <a class="book_link"><label for="books_part" id="book_label">أقسام الكتب</label></a>
+                        <input type="checkbox" id="books_part">
+                        <div class="sub_menu">
+                            <ul>
+                                <li>
+                                    <a href="islamic_books.html">
+                                        <i class="fa-solid fa-quran"></i>
+                                        الإسلاميات
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="books_index.html#literature">
+                                        <i class="fa-solid fa-pen-nib"></i>
+                                        الأدب
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="books_index.html#medicine">
+                                        <i class="fa-solid fa-notes-medical"></i>
+                                        طب و صحة
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="books_index.html#math">
+                                        <i class="fa-solid fa-square-root-variable"></i>
+                                        رياضيات
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="books_index.html#IT">
+                                        <i class="fa-solid fa-code"></i>
+                                        تقنية معلومات
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="books_index.html#Policy">
+                                        <i class="fa-solid fa-book"></i>
+                                        ثقافة عامة
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="books_index.html#rights">
+                                        <i class="fa-solid fa-scale-balanced"></i>
+                                        حقوق
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="books_index.html#Arts">
+                                        <i class="fa-solid fa-paintbrush"></i>
+                                        فنون
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="books_index.html#sports">
+                                        <i class="fa-solid fa-football"></i>
+                                        رياضة
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="books_index.html#diversified">
+                                        <i class="fa-brands fa-slack"></i>
+                                        منوعات
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="index.html#about">من نحن</a></li>
+                    <li><a href="index.html#contact">تواصل معنا</a></li>
+                    <li><a href="create_account.html">تسجيل الدخول</a></li>
+                </ul>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <section class="sign_in" id="sign_in">
+            <div class="content">
+                <div class="special-head">
+                    <h2>الحساب</h2>
+                </div>
+                <div class="info">
+                    <form action="#">
+                        <div class="sub">
+                            <label for="username">اسم المستخدم</label>
+                            <input type="text" id="username" placeholder="اسم المستخدم" class="login">
+                        </div>
+                        <div class="sub">
+                            <label for="password">كلمة المرور</label>
+                            <input type="password" id="password" placeholder="كلمة المرور" class="login">
+                        </div>
+                        <input type="submit" value="تسجيل الدخول">
+                    </form>
+                    <a href="#sign_up">ليس لديك حساب؟ قم بإنشاءه الآن</a>
+                </div>
+            </div>
+        </section>
+        <section class="sign_up" id="sign_up">
+            <h2>إنشاء حساب</h2>
+            <form action=" #">
+                <label for="username" class="lb_style">اسم الحساب<span class="required"> *</span></label>
+                <br>
+                <input required type="text" name="username" id="username" placeholder="اسم الحساب" class="style">
+                <br>
+                <label for="email" class="lb_style">البريد الإلكتروني<span class="required"> *</span></label>
+                <br>
+                <input required type="email" name="email" id="email" placeholder="البريد الإلكتروني" class="style">
+                <br>
+                <label for="password" class="lb_style">كلمة المرور<span class="required"> *</span></label>
+                <br>
+                <input required type="password" name="password" id="password" placeholder="كلمة المرور" class="style">
+                <br>
+                <label for="confirm_password" class="lb_style">تأكيد كلمة المرور<span class="required"> *</span></label>
+                <br>
+                <input required type="password" name="confirm_password" id="confirm_password"
+                    placeholder="تأكيد كلمة المرور" class="style">
+                <br>
+                <label for="favoraite" class="lb_style">الكتب المفضلة</label>
+                <br>
+                <select name="favoraite" id="favoraite">
+                    <option selected disabled>اختر فئة من الفئات</option>
+                    <option value="islamic">إسلاميات</option>
+                    <option value="general_knowledge">ثقافة عامة</option>
+                    <option value="adab">أدب</option>
+                    <option value="rights">حقوق</option>
+                    <option value="Health">طب وصحة</option>
+                    <option value="arts">فنون</option>
+                    <option value="math">رياضيات</option>
+                    <option value="sport">رياضة</option>
+                    <option value="IT">تقنية معلومات</option>
+                    <option value="mix">منوعات</option>
+                </select>
+                <br>
+                <input type="checkbox" name="confirm_conditions" id="confirm_conditions">
+                <label for="confirm_conditions">أوافق على شروط سياسة الخصوصية وكافة الشروط الأخرى.</label>
+                <br><br>
+                <input type="submit" value="إنشاء حساب">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

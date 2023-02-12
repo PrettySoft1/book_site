@@ -1,0 +1,78 @@
+:root {
+    --main-color: #f4a460;
+    --main-transition: .3s;
+    --main-shadow: #e0dfdf;
+    --section-padding: 100px;
+}
+.sign_in {
+    margin-top: 50px;
+}
+.sign_up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    margin-top: 50px;
+}
+.sign_up h2 {
+    margin-bottom: 50px;
+    color: var(--main-color);   
+    font-weight: 900;
+    font-size: 2.5em;
+}
+.sign_up form {
+    width: 600px;
+}
+@media (max-width: 700px) {
+    .sign_up form {
+        width: 90%;
+    }
+}
+.lb_style{
+    display: inline-block;
+    font-weight: 600;
+    margin: 20px -10px 5px;
+    font-size: 18px;
+}
+.style {
+    background-color: #ffffff;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px 20px;
+    box-shadow: 0px 0px 7px #e7e7e7;
+    color:var(--main-color);
+}
+input::placeholder {
+    opacity: 0.5;
+}
+.required {
+    color:var(--main-color);
+}
+select {
+    padding: 10px 20px;
+    width: 100%;
+    color: var(--main-color);
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0px 0px 7px #e5e5e5;
+}
+input[type = "submit"] {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #e7b487;
+    color:white;
+    font-size: 18px;
+    font-weight: 900;
+    padding:10px;
+    transition: var(--main-transition);
+}
+input[type = "checkbox"]:checked~input[type = "submit"] {
+    background-color: #ec7f1f;
+    box-shadow: 0px 2px 5px #c9c9c9;
+    cursor: pointer;
+}
