@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/add_book.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/books.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>صدى الكتب</title>
+</head>
+
+<body dir="rtl">
+    <header>
+        <div class="content">
+            <div class="logo">
+                <a href="#">
+                    <i class="fa-solid fa-book-open fa-2x"></i>
+                    <h1 id="logo">صدى الكتب</h1>
+                </a>
+            </div>
+            <nav>
+                <input type="checkbox">
+                <ul>
+                    <li><a href="index.html">الصفحة الرئيسية </a></li>
+                    <li>
+                        <a class="book_larg">أقسام الكتب</a>
+                        <a class="book_link"><label for="books_part" id="book_label">أقسام الكتب</label></a>
+                        <input type="checkbox" id="books_part">
+                        <div class="sub_menu">
+                            <ul>
+                                <li>
+                                    <a href="islamic_books.html">
+                                        <i class="fa-solid fa-quran"></i>
+                                        الإسلاميات
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="adab.html">
+                                        <i class="fa-solid fa-pen-nib"></i>
+                                        الأدب
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="health.html">
+                                        <i class="fa-solid fa-notes-medical"></i>
+                                        طب و صحة
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="math.html">
+                                        <i class="fa-solid fa-square-root-variable"></i>
+                                        رياضيات
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="it.html">
+                                        <i class="fa-solid fa-code"></i>
+                                        تقنية معلومات
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="general_knowledeg.html">
+                                        <i class="fa-solid fa-book"></i>
+                                        ثقافة عامة
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="rights.html">
+                                        <i class="fa-solid fa-scale-balanced"></i>
+                                        حقوق
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="arts.html">
+                                        <i class="fa-solid fa-paintbrush"></i>
+                                        فنون
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="sports.html">
+                                        <i class="fa-solid fa-football"></i>
+                                        رياضة
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mix.html">
+                                        <i class="fa-brands fa-slack"></i>
+                                        منوعات
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="index.html#about">من نحن</a></li>
+                    <li><a href="index.html#contact">تواصل معنا</a></li>
+                    <li><a href="create_account.html">تسجيل الدخول</a></li>
+                </ul>
+        </div>
+        </nav>
+    </header>
+    <div class="main_title">
+        <h2>إضافة كتاب</h2>
+    </div>
+    <form action="#">
+        <div class="content add">
+            <div class="info">
+                <label for="BookName" class="lb_style">اسم الكتاب</label>
+                <br>
+                <input type="text" name="BookName" id="BookName" class="style">
+                <br>
+                <label for="AuthorName" class="lb_style">اسم المؤلف</label>
+                <br>
+                <input type="text" name="AuthorName" id="AuthorName" class="style">
+                <br>
+                <label for="PageCount" class="lb_style">عدد الصفحات</label>
+                <br>
+                <input type="number" name="PageCount" id="PageCount" min="20" class="style">
+                <br>
+                <label for="Dept" class="lb_style">القسم</label>
+                <br>
+                <select name="Dept" id="Dept">
+                    <option disabled selected>اختر القسم</option>
+                    <option value="islamic">الإسلاميات</option>
+                    <option value="adab">كتب الأدب</option>
+                    <option value="health">طب وصحة</option>
+                    <option value="math">رياضيات</option>
+                    <option value="it">تقنية معلومات</option>
+                    <option value="general_knowledeg">ثقافة عامة</option>
+                    <option value="rights">حقوق</option>
+                    <option value="arts">فنون</option>
+                    <option value="sports">رياضة</option>
+                    <option value="mix">منوعات</option>
+                </select>
+                <br>
+            </div>
+            <div class="photo">
+                <div class="show"><img src="#" alt=""></div>
+                <input type="button" name="upload_photo" id="upload_photo" value="رفع صورة">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
