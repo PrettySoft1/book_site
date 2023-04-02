@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/books.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>صدى الكتب</title>
 </head>
 
@@ -98,12 +95,12 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a href="index.html#about">من نحن</a></li>
                     <li><a href="index.html#contact">تواصل معنا</a></li>
                     <li><a href="create_account.html">تسجيل الدخول</a></li>
+                    <li><a href="Add_Books.html">إضافة كتاب</a></li>
                 </ul>
+            </nav>
         </div>
-        </nav>
     </header>
     <main>
         <div class="main_title">
@@ -121,11 +118,14 @@
             <i class="fas fa-search"></i>
         </form>
         <div class="content books_content">
+            <div id="not_found">
+                <h2>غير متوفر</h2>
+            </div>
             <div class="box">
                 <img src="BooksCover/islamic/islam.jpg" alt="#">
                 <div class="details">
                     <h3>البداية والنهاية</h3>
-                    <p>المؤلف: <span class="about">إسماعيل ابن كثير</span></p>
+                    <p class="authors">المؤلف: <span class="about">إسماعيل ابن كثير</span></p>
                     <p>عدد الصفحات: <span class="about">450</span></p>
                     <p>عدد الأجزاء: <span class="about">1</span></p>
                     <a href="#" class="download" download>تحميل الكتاب</a>
@@ -135,7 +135,7 @@
                 <img src="BooksCover/islamic/serah_nabaweah.jpg" alt="#">
                 <div class="details">
                     <h3>السيرة النبوية</h3>
-                    <p>المؤلف: <span class="about">ابن هشام</span></p>
+                    <p class="authors">المؤلف: <span class="about">ابن هشام</span></p>
                     <p>عدد الصفحات: <span class="about">450</span></p>
                     <p>عدد الأجزاء: <span class="about">1</span></p>
                     <a href="#" class="download" download>تحميل الكتاب</a>
@@ -145,7 +145,7 @@
                 <img src="BooksCover/islamic/altabary.jpg" alt="#">
                 <div class="details">
                     <h3>تفسير الطبري</h3>
-                    <p>المؤلف: <span class="about">محمد بن جرير الطبري</span></p>
+                    <p class="authors">المؤلف: <span class="about">محمد بن جرير الطبري</span></p>
                     <p>عدد الصفحات: <span class="about">450</span></p>
                     <p>عدد الأجزاء: <span class="about">1</span></p>
                     <a href="#" class="download" download>تحميل الكتاب</a>
@@ -155,7 +155,7 @@
                 <img src="BooksCover/islamic/alam.jpg" alt="#">
                 <div class="details">
                     <h3>الأم</h3>
-                    <p>المؤلف: <span class="about">محمد بن إدريس الشافعي</span></p>
+                    <p class="authors">المؤلف: <span class="about">محمد بن إدريس الشافعي</span></p>
                     <p>عدد الصفحات: <span class="about">450</span></p>
                     <p>عدد الأجزاء: <span class="about">1</span></p>
                     <a href="#" class="download" download>تحميل الكتاب</a>
@@ -165,7 +165,7 @@
                 <img src="BooksCover/islamic/rahiq_makhtom.jpg" alt="#">
                 <div class="details">
                     <h3>الرحيق المختوم</h3>
-                    <p>المؤلف: <span class="about">صفي الرحمن المباركفوري</span></p>
+                    <p class="authors">المؤلف: <span class="about">صفي الرحمن المباركفوري</span></p>
                     <p>عدد الصفحات: <span class="about">450</span></p>
                     <p>عدد الأجزاء: <span class="about">1</span></p>
                     <a href="#" class="download" download>تحميل الكتاب</a>
@@ -175,17 +175,27 @@
                 <img src="BooksCover/islamic/almoata.jpg" alt="#">
                 <div class="details">
                     <h3>الموطأ</h3>
-                    <p>المؤلف: <span class="about">مالك بن أنس</span></p>
+                    <p class="authors">المؤلف: <span class="about">مالك بن أنس</span></p>
                     <p>عدد الصفحات: <span class="about">450</span></p>
                     <p>عدد الأجزاء: <span class="about">1</span></p>
                     <a href="#" class="download" download>تحميل الكتاب</a>
                 </div>
             </div>
             <div class="box">
-                <img src="BooksCover/islamic/almoata.jpg" alt="#">
+                <img src="BooksCover/islamic/islam.jpg" alt="#">
                 <div class="details">
                     <h3>البداية والنهاية</h3>
-                    <p>المؤلف: <span class="about">إسماعيل ابن كثير</span></p>
+                    <p class="authors">المؤلف: <span class="about">إسماعيل ابن كثير</span></p>
+                    <p>عدد الصفحات: <span class="about">450</span></p>
+                    <p>عدد الأجزاء: <span class="about">1</span></p>
+                    <a href="#" class="download" download>تحميل الكتاب</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BooksCover/islamic/serah_nabaweah.jpg" alt="#">
+                <div class="details">
+                    <h3>السيرة النبوية</h3>
+                    <p class="authors">المؤلف: <span class="about">ابن هشام</span></p>
                     <p>عدد الصفحات: <span class="about">450</span></p>
                     <p>عدد الأجزاء: <span class="about">1</span></p>
                     <a href="#" class="download" download>تحميل الكتاب</a>
@@ -194,8 +204,158 @@
             <div class="box">
                 <img src="BooksCover/islamic/altabary.jpg" alt="#">
                 <div class="details">
+                    <h3>تفسير الطبري</h3>
+                    <p class="authors">المؤلف: <span class="about">محمد بن جرير الطبري</span></p>
+                    <p>عدد الصفحات: <span class="about">450</span></p>
+                    <p>عدد الأجزاء: <span class="about">1</span></p>
+                    <a href="#" class="download" download>تحميل الكتاب</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BooksCover/islamic/alam.jpg" alt="#">
+                <div class="details">
+                    <h3>الأم</h3>
+                    <p class="authors">المؤلف: <span class="about">محمد بن إدريس الشافعي</span></p>
+                    <p>عدد الصفحات: <span class="about">450</span></p>
+                    <p>عدد الأجزاء: <span class="about">1</span></p>
+                    <a href="#" class="download" download>تحميل الكتاب</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BooksCover/islamic/rahiq_makhtom.jpg" alt="#">
+                <div class="details">
+                    <h3>الرحيق المختوم</h3>
+                    <p class="authors">المؤلف: <span class="about">صفي الرحمن المباركفوري</span></p>
+                    <p>عدد الصفحات: <span class="about">450</span></p>
+                    <p>عدد الأجزاء: <span class="about">1</span></p>
+                    <a href="#" class="download" download>تحميل الكتاب</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BooksCover/islamic/almoata.jpg" alt="#">
+                <div class="details">
+                    <h3>الموطأ</h3>
+                    <p class="authors">المؤلف: <span class="about">مالك بن أنس</span></p>
+                    <p>عدد الصفحات: <span class="about">450</span></p>
+                    <p>عدد الأجزاء: <span class="about">1</span></p>
+                    <a href="#" class="download" download>تحميل الكتاب</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BooksCover/islamic/islam.jpg" alt="#">
+                <div class="details">
                     <h3>البداية والنهاية</h3>
-                    <p>المؤلف: <span class="about">إسماعيل ابن كثير</span></p>
+                    <p class="authors">المؤلف: <span class="about">إسماعيل ابن كثير</span></p>
+                    <p>عدد الصفحات: <span class="about">450</span></p>
+                    <p>عدد الأجزاء: <span class="about">1</span></p>
+                    <a href="#" class="download" download>تحميل الكتاب</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BooksCover/islamic/serah_nabaweah.jpg" alt="#">
+                <div class="details">
+                    <h3>السيرة النبوية</h3>
+                    <p class="authors">المؤلف: <span class="about">ابن هشام</span></p>
+                    <p>عدد الصفحات: <span class="about">450</span></p>
+                    <p>عدد الأجزاء: <span class="about">1</span></p>
+                    <a href="#" class="download" download>تحميل الكتاب</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BooksCover/islamic/altabary.jpg" alt="#">
+                <div class="details">
+                    <h3>تفسير الطبري</h3>
+                    <p class="authors">المؤلف: <span class="about">محمد بن جرير الطبري</span></p>
+                    <p>عدد الصفحات: <span class="about">450</span></p>
+                    <p>عدد الأجزاء: <span class="about">1</span></p>
+                    <a href="#" class="download" download>تحميل الكتاب</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BooksCover/islamic/alam.jpg" alt="#">
+                <div class="details">
+                    <h3>الأم</h3>
+                    <p class="authors">المؤلف: <span class="about">محمد بن إدريس الشافعي</span></p>
+                    <p>عدد الصفحات: <span class="about">450</span></p>
+                    <p>عدد الأجزاء: <span class="about">1</span></p>
+                    <a href="#" class="download" download>تحميل الكتاب</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BooksCover/islamic/rahiq_makhtom.jpg" alt="#">
+                <div class="details">
+                    <h3>الرحيق المختوم</h3>
+                    <p class="authors">المؤلف: <span class="about">صفي الرحمن المباركفوري</span></p>
+                    <p>عدد الصفحات: <span class="about">450</span></p>
+                    <p>عدد الأجزاء: <span class="about">1</span></p>
+                    <a href="#" class="download" download>تحميل الكتاب</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BooksCover/islamic/almoata.jpg" alt="#">
+                <div class="details">
+                    <h3>الموطأ</h3>
+                    <p class="authors">المؤلف: <span class="about">مالك بن أنس</span></p>
+                    <p>عدد الصفحات: <span class="about">450</span></p>
+                    <p>عدد الأجزاء: <span class="about">1</span></p>
+                    <a href="#" class="download" download>تحميل الكتاب</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BooksCover/islamic/islam.jpg" alt="#">
+                <div class="details">
+                    <h3>البداية والنهاية</h3>
+                    <p class="authors">المؤلف: <span class="about">إسماعيل ابن كثير</span></p>
+                    <p>عدد الصفحات: <span class="about">450</span></p>
+                    <p>عدد الأجزاء: <span class="about">1</span></p>
+                    <a href="#" class="download" download>تحميل الكتاب</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BooksCover/islamic/serah_nabaweah.jpg" alt="#">
+                <div class="details">
+                    <h3>السيرة النبوية</h3>
+                    <p class="authors">المؤلف: <span class="about">ابن هشام</span></p>
+                    <p>عدد الصفحات: <span class="about">450</span></p>
+                    <p>عدد الأجزاء: <span class="about">1</span></p>
+                    <a href="#" class="download" download>تحميل الكتاب</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BooksCover/islamic/altabary.jpg" alt="#">
+                <div class="details">
+                    <h3>تفسير الطبري</h3>
+                    <p class="authors">المؤلف: <span class="about">محمد بن جرير الطبري</span></p>
+                    <p>عدد الصفحات: <span class="about">450</span></p>
+                    <p>عدد الأجزاء: <span class="about">1</span></p>
+                    <a href="#" class="download" download>تحميل الكتاب</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BooksCover/islamic/alam.jpg" alt="#">
+                <div class="details">
+                    <h3>الأم</h3>
+                    <p class="authors">المؤلف: <span class="about">محمد بن إدريس الشافعي</span></p>
+                    <p>عدد الصفحات: <span class="about">450</span></p>
+                    <p>عدد الأجزاء: <span class="about">1</span></p>
+                    <a href="#" class="download" download>تحميل الكتاب</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BooksCover/islamic/rahiq_makhtom.jpg" alt="#">
+                <div class="details">
+                    <h3>الرحيق المختوم</h3>
+                    <p class="authors">المؤلف: <span class="about">صفي الرحمن المباركفوري</span></p>
+                    <p>عدد الصفحات: <span class="about">450</span></p>
+                    <p>عدد الأجزاء: <span class="about">1</span></p>
+                    <a href="#" class="download" download>تحميل الكتاب</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="BooksCover/islamic/almoata.jpg" alt="#">
+                <div class="details">
+                    <h3>الموطأ</h3>
+                    <p class="authors">المؤلف: <span class="about">مالك بن أنس</span></p>
                     <p>عدد الصفحات: <span class="about">450</span></p>
                     <p>عدد الأجزاء: <span class="about">1</span></p>
                     <a href="#" class="download" download>تحميل الكتاب</a>
@@ -203,6 +363,7 @@
             </div>
         </div>
     </main>
+    <script src="javascript/books.js"></script>
 </body>
 
 </html>

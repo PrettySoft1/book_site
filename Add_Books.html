@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="css/add_book.css">
     <link rel="stylesheet" href="css/account.css">
     <link rel="stylesheet" href="css/books.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>صدى الكتب</title>
 </head>
 
@@ -100,12 +97,12 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a href="index.html#about">من نحن</a></li>
                     <li><a href="index.html#contact">تواصل معنا</a></li>
                     <li><a href="create_account.html">تسجيل الدخول</a></li>
+                    <li><a href="Add_Books.html">إضافة كتاب</a></li>
                 </ul>
+            </nav>
         </div>
-        </nav>
     </header>
     <div class="main_title">
         <h2>إضافة كتاب</h2>
@@ -115,20 +112,20 @@
             <div class="info">
                 <label for="BookName" class="lb_style">اسم الكتاب</label>
                 <br>
-                <input type="text" name="BookName" id="BookName" class="style">
+                <input type="text" name="BookName" id="BookName" class="style" autocomplete="off">
                 <br>
                 <label for="AuthorName" class="lb_style">اسم المؤلف</label>
                 <br>
-                <input type="text" name="AuthorName" id="AuthorName" class="style">
+                <input type="text" name="AuthorName" id="AuthorName" class="style" autocomplete="off">
                 <br>
                 <label for="PageCount" class="lb_style">عدد الصفحات</label>
                 <br>
-                <input type="number" name="PageCount" id="PageCount" min="20" class="style">
+                <input type="number" name="PageCount" id="PageCount" min="50" class="style" autocomplete="off">
                 <br>
                 <label for="Dept" class="lb_style">القسم</label>
                 <br>
                 <select name="Dept" id="Dept">
-                    <option disabled selected>اختر القسم</option>
+                    <option disabled selected value="a">اختر القسم</option>
                     <option value="islamic">الإسلاميات</option>
                     <option value="adab">كتب الأدب</option>
                     <option value="health">طب وصحة</option>
@@ -146,8 +143,10 @@
                 <div class="show"><img src="#" alt=""></div>
                 <input type="button" name="upload_photo" id="upload_photo" value="رفع صورة">
             </div>
+            <input type="submit" id="add_book" value="إضافة الكتاب">
         </div>
     </form>
+    <script src="javascript/add_books.js"></script>
 </body>
 
 </html>

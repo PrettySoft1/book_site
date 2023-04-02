@@ -4,22 +4,20 @@
     --main-shadow: #e0dfdf;
     --section-padding: 100px;
 }
-.sign_in {
-    margin-top: 50px;
+.sign_in p:last-child {
+    color: #777;
+    margin-top: 10px;
+    cursor: pointer;
 }
 .sign_up {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 100px 0px;
-    margin-top: 50px;
+    display: none;
 }
-.sign_up h2 {
-    margin-bottom: 50px;
-    color: var(--main-color);   
-    font-weight: 900;
-    font-size: 2.5em;
+.special-head h2 {
+    letter-spacing: 3px;
 }
 .sign_up form {
     width: 600px;
@@ -76,3 +74,23 @@ input[type = "checkbox"]:checked~input[type = "submit"] {
     box-shadow: 0px 2px 5px #c9c9c9;
     cursor: pointer;
 }
+
+/* Buttons Style */
+.select {
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 150px auto 0;
+}
+.button {
+    width: 40%;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* Buttons Style */
